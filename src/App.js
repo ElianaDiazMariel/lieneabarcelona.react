@@ -1,16 +1,24 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import ItemListContainer from './components/ItemListContainer';
+import NavBar from './components/NavBar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Error404 from './components/Error404';
+import ItemList from './components/shop/ItemList';
+import ItemDetail from './components/shop/ItemDetail';
+
+
+
 
 function App() {
   return (
     <>
-      <header className='navbar__wraper'>
-        <Navbar/>
-      </header>
-      <main>
-        <ItemListContainer greeting={'MUEBLES INDUSTRIALES PROXIMAMENTE'}/>
-      </main>
+    <BrowserRouter>
+    <NavBar/>
+     <Routes>
+       <Route path={'/shop'} element={<ItemList/>} />
+       <Route path={'/shop/item/:id'} element={<ItemDetail/>} />
+       <Route path={'*'} element={<Error404/>} />
+     </Routes>
+    </BrowserRouter>
     </>
   );
 }
