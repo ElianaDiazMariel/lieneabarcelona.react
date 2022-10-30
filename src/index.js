@@ -5,12 +5,12 @@ import App from './App';
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCD5H47WptZUqisW-7BT01RWlzCQg-GPw4",
-  authDomain: "lineabarcelona-70794.firebaseapp.com",
-  projectId: "lineabarcelona-70794",
-  storageBucket: "lineabarcelona-70794.appspot.com",
-  messagingSenderId: "974399581652",
-  appId: "1:974399581652:web:5e7f34145a07c9f1b9fa41"
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_REACT_APP_APPID,
 };
 
 
