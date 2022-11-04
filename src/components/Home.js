@@ -2,8 +2,6 @@ const Home = () => {
     return (
       <>
        
-  
-       
         <h1 className="centerText text-3xl font-bold">
           Bienvenidos a Linea Barcelona
         </h1>
