@@ -1,13 +1,15 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import ItemDetail from './components/shop/ItemDetail';
 import Cart from './components/Cart';
-import CartWidget from './components/CartWidget';
 import Home from './components/Home';
-import IteamDetail from './components/IteamDetail';
+import ItemDetail from './components/ItemDetail';
 import ListContainer from './components/ListContainer';
 import Footer from './components/Footer';
+import {CartContextProvider} from './context/cartContext';
+import Contact from './components/Contact';
+
+
 
 
 
